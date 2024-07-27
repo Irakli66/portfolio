@@ -23,35 +23,48 @@ const projects = [
   {
     num: '01',
     category: 'frontend',
-    title: 'project 1',
+    title: 'cybertv',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
+      'cybertv.gg is esports platform for esports federation of Georgia that hosts game events.',
+    stack: [
+      { name: 'React.js' },
+      { name: 'Styled-components' },
+      { name: 'Figma' },
+    ],
     image: '/assets/work/thumb1.png',
-    live: '',
+    live: 'https://cybertv.gg/',
     github: '',
   },
   {
     num: '02',
-    category: 'fullstack',
-    title: 'project 2',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet',
-    stack: [{ name: 'Next.js' }, { name: 'Tailwind.css' }, { name: 'Node.js' }],
-    image: '/assets/work/thumb2.png',
-    live: '',
-    github: '',
+    category: 'frontend',
+    title: 'Clipart assigment project',
+    description: 'Clipart assigment project.',
+    stack: [{ name: 'Vue.js' }, { name: 'Tailwind.css' }, { name: 'Node.js' }],
+    image: '/assets/work/clipart.png',
+    live: 'https://spontaneous-treacle-4f4ec0.netlify.app/',
+    github: 'https://github.com/Irakli66/clipart-assignment',
   },
   {
     num: '03',
     category: 'frontend',
-    title: 'project 3',
+    title: 'website for Gargar.dev',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet',
+      'I am co-founder of gargar.dev which provides software solutions to people who need one.',
     stack: [{ name: 'Next.js' }, { name: 'Tailwind.css' }],
-    image: '/assets/work/thumb3.png',
-    live: '',
-    github: '',
+    image: '/assets/work/gargar.png',
+    live: 'https://gargar-app.vercel.app/',
+    github: 'https://github.com/Irakli66/gargar-app',
+  },
+  {
+    num: '04',
+    category: 'fullstack',
+    title: 'Sweeft assigment project',
+    description: 'Sweeft assigment project.',
+    stack: [{ name: 'Next.js' }, { name: 'Styled-components' }],
+    image: '/assets/work/sweeft.png',
+    live: 'https://roaring-elf-95de16.netlify.app/',
+    github: 'https://github.com/Irakli66/Sweeft-Project',
   },
 ];
 
@@ -105,7 +118,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -118,7 +131,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project button */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -162,7 +175,7 @@ const Work = () => {
               {/* slide buttons  */}
               <WorkSliderBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                btnStyles="bg-accent rounded-md xl:rounded-full hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                btnStyles="bg-accent rounded-md xl:rounded-md hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
             </Swiper>
           </div>

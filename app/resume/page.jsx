@@ -7,6 +7,7 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaVuejs,
 } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs, SiTypescript } from 'react-icons/si';
 
@@ -25,7 +26,7 @@ import { motion } from 'framer-motion';
 const about = {
   title: 'About me',
   description:
-    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias consectetur amet.',
+    'Here is some information about me feel free to rach out to me by clicking hire me button ',
   info: [
     {
       fieldName: 'Name',
@@ -67,7 +68,7 @@ const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My experience',
   description:
-    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias consectetur amet.',
+    'I have had opportunity to work with great teams in the companies I worked for to share experience, grow as developer and  person as well.',
   items: [
     {
       company: 'Gargar.dev',
@@ -87,7 +88,7 @@ const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My education',
   description:
-    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias consectetur amet.',
+    'I have bachelors degree in computer science and have finished many other courses that you can see below.',
   items: [
     {
       institution: 'University of Georgia (UG)',
@@ -116,7 +117,7 @@ const education = {
 const skills = {
   title: 'My skilss',
   description:
-    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias consectetur amet.',
+    'I have experience in these technologies. Always growing and acquiring new ones.',
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -137,6 +138,10 @@ const skills = {
     {
       icon: <FaReact />,
       name: 'react.js',
+    },
+    {
+      icon: <FaVuejs />,
+      name: 'vue.js',
     },
     {
       icon: <SiNextdotjs />,

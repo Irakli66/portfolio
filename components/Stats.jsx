@@ -2,9 +2,12 @@
 
 import CountUp from 'react-countup';
 
+const date = new Date();
+let year = date.getFullYear();
+
 const stats = [
   {
-    num: 2,
+    num: year - 2022,
     text: 'Years of experience',
   },
   {
@@ -16,7 +19,7 @@ const stats = [
     text: 'Technologies mastered',
   },
   {
-    num: 250,
+    num: 416,
     text: 'Code commits',
   },
 ];

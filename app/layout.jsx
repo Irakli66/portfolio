@@ -14,8 +14,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: 'Irakli codes',
-  description: 'irakli&apos;s portfolio',
+  title: 'Irakli Kharshiladze',
+  description: 'Personal portfolio',
   icons: {
     icon: '/favicon.png',
   },

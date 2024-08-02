@@ -9,28 +9,28 @@ const services = [
     num: '01',
     title: 'Web Development',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias',
+      'Offering custom web development solutions, from sleek designs to robust functionality.',
     href: '',
   },
   {
     num: '02',
     title: 'UI/UX Design',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias',
+      'Crafting intuitive and engaging UI/UX designs to elevate user experiences and drive success.',
     href: '',
   },
   {
     num: '03',
     title: 'Logo Design',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias',
+      "Creating distinctive and memorable logos that capture your brand's essence.",
     href: '',
   },
   {
     num: '04',
     title: 'SEO',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias',
+      'Boosting your online visibility with expert SEO strategies to drive traffic and enhance search rankings.',
     href: '',
   },
 ];

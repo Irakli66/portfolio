@@ -25,13 +25,13 @@ const projects = [
     category: 'frontend',
     title: 'cybertv',
     description:
-      'cybertv.gg is esports platform for esports federation of Georgia that hosts game events.',
+      'cybertv.gg is an esports platform for esports federation of Georgia that hosts game events.',
     stack: [
       { name: 'React.js' },
       { name: 'Styled-components' },
       { name: 'Figma' },
     ],
-    image: '/assets/work/thumb1.png',
+    image: '/assets/work/cybertv.png',
     live: 'https://cybertv.gg/',
     github: '',
   },
@@ -93,7 +93,7 @@ const Work = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+          <div className="w-full xl:w-[50%] xl:h-[460px]  flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
@@ -156,7 +156,7 @@ const Work = () => {
               {projects?.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] rounded-md relative  group flex justify-center items-center bg-pink-50/20">
+                    <div className="xl:h-[460px] h-[360px] rounded-md relative  group flex justify-center items-center bg-pink-50/20">
                       {/* overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
@@ -165,7 +165,7 @@ const Work = () => {
                           src={project.image}
                           fill
                           className="object-fill rounded-md"
-                          alt=""
+                          alt="project image"
                         />
                       </div>
                     </div>

@@ -25,7 +25,7 @@ const projects = [
     category: 'frontend',
     title: 'cybertv',
     description:
-      'cybertv.gg is an esports platform for esports federation of Georgia that hosts game events.',
+      'cybertv.gg is an esports platform for esports federation of Georgia that hosts game events. no github link since the repository is private.',
     stack: [
       { name: 'React.js' },
       { name: 'Styled-components' },
@@ -60,11 +60,20 @@ const projects = [
     num: '04',
     category: 'fullstack',
     title: 'Sweeft assigment project',
-    description: 'Sweeft assigment project.',
+    description: 'Sweeft assigment project with infinite scroll and search.',
     stack: [{ name: 'Next.js' }, { name: 'Styled-components' }],
     image: '/assets/work/sweeft.png',
     live: 'https://roaring-elf-95de16.netlify.app/',
     github: 'https://github.com/Irakli66/Sweeft-Project',
+  },
+  {
+    num: '05',
+    category: 'frontend',
+    title: 'Expense tracker',
+    description: 'This is a simple expense tracker app made in Vue.js',
+    stack: [{ name: 'Vue.js' }, { name: 'CSS' }],
+    image: '/assets/work/expensetracker.png',
+    live: 'https://luminous-pegasus-55f95a.netlify.app/',
   },
 ];
 
@@ -131,18 +140,20 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project button */}
-                <Link href={project.github} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.github && (
+                  <Link href={project.github} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>

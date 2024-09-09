@@ -69,7 +69,7 @@ const Contact = () => {
         description: '',
       });
       setIsLoading(false);
-      toast({ title: 'You message was sent' });
+      toast({ title: 'Your message was sent' });
     } catch (error) {
       setIsLoading(false);
       setError(error.message);

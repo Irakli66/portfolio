@@ -8,6 +8,7 @@ import {
   FaFigma,
   FaNodeJs,
   FaVuejs,
+  FaSwift,
 } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs, SiTypescript } from 'react-icons/si';
 
@@ -96,14 +97,14 @@ const education = {
       duration: '2018 - 2022',
     },
     {
+      institution: 'TBC IT Academy',
+      degree: 'iOS Development',
+      duration: '2024',
+    },
+    {
       institution: 'Online Course',
       degree: 'Programming Course',
       duration: '2021-2022',
-    },
-    {
-      institution: 'Udemy',
-      degree: 'Front-end full course',
-      duration: '2022',
     },
     {
       institution: 'Udemy',
@@ -119,6 +120,10 @@ const skills = {
   description:
     'I have experience in these technologies. Always growing and acquiring new ones.',
   skillList: [
+    {
+      icon: <FaSwift />,
+      name: 'Swift',
+    },
     {
       icon: <FaHtml5 />,
       name: 'html 5',

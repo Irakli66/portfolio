@@ -9,6 +9,7 @@ import {
   FaNodeJs,
   FaVuejs,
   FaSwift,
+  FaAppStoreIos,
 } from 'react-icons/fa';
 import { SiTailwindcss, SiNextdotjs, SiTypescript } from 'react-icons/si';
 
@@ -123,6 +124,14 @@ const skills = {
     {
       icon: <FaSwift />,
       name: 'Swift',
+    },
+    {
+      icon: <FaAppStoreIos />,
+      name: 'UIKit',
+    },
+    {
+      icon: <FaAppStoreIos />,
+      name: 'SwiftUI',
     },
     {
       icon: <FaHtml5 />,

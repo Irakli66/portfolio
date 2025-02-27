@@ -22,6 +22,17 @@ import WorkSliderBtns from '@/components/WorkSliderBtns';
 const projects = [
   {
     num: '01',
+    category: 'iOS app',
+    title: 'SkiWalker',
+    description:
+      'SkiWalker is a modern e-commerce app for buying and selling skiing gear. Built using SwiftUI as the base framework, with UIKit used in select views, the app follows the MVVM architecture and ensures a seamless shopping experience.',
+    stack: [{ name: 'Swift' }, { name: 'SwiftUI' }, { name: 'UIKit' }],
+    image: '/assets/work/skiwalker.png',
+    live: '',
+    github: 'https://github.com/Irakli66/Ski-Walker',
+  },
+  {
+    num: '02',
     category: 'frontend',
     title: 'cybertv',
     description:
@@ -36,7 +47,7 @@ const projects = [
     github: '',
   },
   {
-    num: '02',
+    num: '03',
     category: 'frontend',
     title: 'Clipart assigment project',
     description: 'Clipart assigment project.',
@@ -46,7 +57,7 @@ const projects = [
     github: 'https://github.com/Irakli66/clipart-assignment',
   },
   {
-    num: '03',
+    num: '04',
     category: 'frontend',
     title: 'website for Gargar.dev',
     description:
@@ -57,7 +68,7 @@ const projects = [
     github: 'https://github.com/Irakli66/gargar-app',
   },
   {
-    num: '04',
+    num: '05',
     category: 'fullstack',
     title: 'Sweeft assigment project',
     description: 'Sweeft assigment project with infinite scroll and search.',
@@ -67,7 +78,7 @@ const projects = [
     github: 'https://github.com/Irakli66/Sweeft-Project',
   },
   {
-    num: '05',
+    num: '06',
     category: 'frontend',
     title: 'Expense tracker',
     description: 'This is a simple expense tracker app made in Vue.js',
@@ -127,18 +138,21 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.live && (
+                  <Link href={project.live} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+
                 {/* github project button */}
                 {project.github && (
                   <Link href={project.github} target="_blank">
